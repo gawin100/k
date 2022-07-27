@@ -98,7 +98,7 @@ echo ""
 echo "************************************"
 echo "Building Reddit APK"
 echo "************************************"
-if [ -f "com.reddit.frontpage.apk" ]
+if [ -f "com.reddit.frontpage.apkbac" ]
 then
     java -jar revanced-cli.jar -b revanced-patches.jar -r \
                                -a com.reddit.frontpage.apk -o build/reddit.apk
