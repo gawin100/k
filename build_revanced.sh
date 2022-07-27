@@ -49,7 +49,7 @@ mkdir -p build
 
 # All available patches can be found here: https://github.com/revanced/revanced-patches#list-of-available-patches
 
-if [ -f "com.google.android.youtube.apkbac" ]
+if [ -f "com.google.android.youtube.apk" ]
 then
     echo "Building Root APK"
     java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
@@ -69,7 +69,7 @@ echo ""
 echo "************************************"
 echo "Building YouTube Music APK"
 echo "************************************"
-if [ -f "com.google.android.apps.youtube.music.apkbac" ]
+if [ -f "com.google.android.apps.youtube.music.apk" ]
 then
     echo "Building Root APK"
     java -jar revanced-cli.jar -b revanced-patches.jar \
@@ -98,7 +98,7 @@ echo ""
 echo "************************************"
 echo "Building Reddit APK"
 echo "************************************"
-if [ -f "com.reddit.frontpage.apkbac" ]
+if [ -f "com.reddit.frontpage.apk" ]
 then
     java -jar revanced-cli.jar -b revanced-patches.jar -r \
                                -a com.reddit.frontpage.apk -o build/reddit.apk
